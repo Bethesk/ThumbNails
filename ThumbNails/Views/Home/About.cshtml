@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "ThumbNail";
+}
+
+<body>
+    <header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        @Styles.Render("~/Content/ThumbNailStyle.css")
+    </header>
+
+
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+
+
+    <!--<img src="~/Content/Image/thumbNailImage.jpg" /> -->
+
+
+
+    <div class="row">
+
+        <div class="thumbbNail"><img src="~/Content/Images/image0.jpg"></div>
+
+        <div class="thumbbNail"><img src="~/Content/Images/image1.jpg"></div>
+
+        <div class="thumbbNail"><img src="~/Content/Images/image2.jpg"></div>
+
+        <div class="thumbbNail"><img src="~/Content/Images/image3.jpg"></div>
+
+    </div>
+
+    <script>
+
+    $('.thumbbNail img').hover(function () {
+        $(this).css({ width: "300px", height: "300px", position: "absolute"});
+
+    }, function () {
+        $(this).css({ width: "100px", height: "100px", position: "relative" });
+    });
+
+
+    </script>
+</body>
+

@@ -1,0 +1,16 @@
+﻿body {
+}
+
+
+.thumbbNail {
+    box-sizing: border-box;
+    /*vertical-align: top; */
+    border: 1px solid #99ccee;
+    width: 100px;
+    height: 100px;
+}
+
+    .thumbbNail img {
+        width: 100px;
+        height: 100px;
+    }
